@@ -16,7 +16,7 @@ class Api extends BaseController
     public function charToBin(){
         $fontStr = input("str");
         $str = iconv("utf-8","GB2312//IGNORE", $fontStr);
-        $fontFile = app()->getRootPath()."/public/static/font/hzk16s"; // 点阵字库文件名
+        $fontFile = app()->getRootPath()."/hzk16s"; // 点阵字库文件名
         $fontWidth = 16;  // 单字宽度
         $fontHeight = 16; // 单字高度
         $start_offset = 0; // 偏移
@@ -47,7 +47,7 @@ class Api extends BaseController
 //        $fontStr = input("str");
         $fontStr = "暖曦";
         $str = iconv("utf-8", "GB2312//IGNORE", $fontStr);
-        $fontFile = app()->getRootPath() . "/public/static/font/HZK24S"; // 点阵字库文件名
+        $fontFile = app()->getRootPath() . "/HZK24S"; // 点阵字库文件名
         $fontWidth = 24;  // 单字宽度
         $fontHeight = 24; // 单字高
         $fp = fopen($fontFile, "rb");
@@ -82,7 +82,7 @@ class Api extends BaseController
 //        $str = input("str");
        $str = "中a";
        $str = iconv("utf-8", "GB2312//IGNORE", $str);
-       $fontFile = app()->getRootPath() . "/public/static/font/simsun12.fon"; // 点阵字库文件名
+       $fontFile = app()->getRootPath() . "/simsun12.fon"; // 点阵字库文件名
        $fontWidth = 12;  // 单字宽度
        $fontHeight = 12; // 单字高
        $fp = fopen($fontFile, "rb");
