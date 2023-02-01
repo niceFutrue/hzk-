@@ -15,3 +15,8 @@ HZK32
 HZK40
 HZK48
 ```
+## 使用 php 做后端接口
+
+**api.php 是原例子，没测试过 **
+
+**thinkphp6_api.php 是本人仿写的，测试过 **
